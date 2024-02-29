@@ -1,0 +1,225 @@
+@charset "utf-8";
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Nanum+Gothic+Coding&display=swap');
+
+body{
+    font:normal 14px/1 "Nanum Gothic Coding", "arial";
+    background:#fff;
+    color:#333;
+}
+
+#wrap{width:100%; display:flex; flex-flow:row wrap; position:relative;}
+
+#wrap #header{width:200px; height:800px; position:relative; z-index:3;}
+
+
+#wrap #header .logo{width:100%; height:200px;}
+#wrap #header .logo .title{width:100%; height:50px; display:flex; justify-content: center; align-items: center;}
+#wrap #header .logo .title h2{font-weight:700; font-size:30px; font-family: "Nanum Brush Script";}
+#wrap #header .logo .content h1{width:100%; height:150px;}
+#wrap #header .logo .content h1 a{width:100%; height:100%; display:flex; justify-content: center;}
+#wrap #header .logo .content h1 a img{width:50%; height:70%;}
+
+
+
+#wrap #header .menu{width:100%; height:600px;}
+#wrap #header .menu #nav{width:100%;}
+#wrap #header .menu #nav > ul
+{
+    width:100%;
+    border-left:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    color:#000;
+    font-weight:600;
+    position:relative;
+}
+#wrap #header .menu #nav > ul > li{width:100%;}
+#wrap #header .menu #nav > ul > li > a
+{
+    display:flex;
+    width:100%; height:50px; 
+    align-items: center; justify-content: center;
+    border-top:1px solid #ddd;
+}
+
+#wrap #header .menu #nav > ul > li > a:hover{
+    background:#111;
+    color:#fff;
+}
+
+#wrap #header .menu #nav > ul > li > a.on{
+    background:#111;
+    color:#fff;
+}
+
+#wrap #header .menu #nav >ul > li .sub
+{
+    position:absolute;
+    left:0;
+    top:0;
+    background:rgba(0,0,0);
+    width:1700px;
+    height:201px;
+    margin-left:200px;
+    border-bottom:1px solid #ddd;
+}
+
+#wrap #header .menu #nav >ul > li .sub .sub-container {height:100%; width:100%; }
+#wrap #header .menu #nav >ul > li .sub .sub-container  >li{width:100%; height:25%; line-height:170%;}
+#wrap #header .menu #nav >ul > li .sub .sub-container  >li >ul{width:100%; height:100%; display:flex;}
+#wrap #header .menu #nav >ul > li .sub .sub-container  >li >ul >li{width:10%; height:100%;}
+#wrap #header .menu #nav >ul > li .sub .sub-container  >li >ul >li a{ height:100%; display:flex; justify-content: center; align-items: center; color:#fff;}
+#wrap #header .menu #nav >ul > li .sub .sub-container  >li >ul >li a:hover{background:#fff; color:#000;}
+
+#wrap #header .menu #nav >ul > li .sub1.on{display:none;}
+#wrap #header .menu #nav >ul > li .sub2.on{display:none;}
+#wrap #header .menu #nav >ul > li .sub3.on{display:none;}
+#wrap #header .menu #nav >ul > li .sub4.on{display:none;}
+
+
+#wrap #main{width:calc(100% - 200px); height:800px; border-left:1px solid #ddd; position:relative; z-index:2;}
+
+#wrap #main #section1{width:100%; height:400px; background:#fff;}
+#wrap #main #section1 .slide-container{width:100%; height:100%;}
+#wrap #main #section1 .slide-container .slide-content{width:100%; height:100%; overflow:hidden;}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap
+{
+    width:100%; height:2000px; margin-top:-400px; position:relative; top:0%;
+}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide
+{
+    width:100%; height:400px;
+    background:url() no-repeat 50% 20%;
+    background-size:cover;
+    cursor:pointer;
+}
+
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide1
+{
+    background-image:url(../img/Slide1.jpg);
+    background-position: 70% 40%;
+}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide2
+{
+    background-image:url(../img/Slide2.jpg);
+    background-position: 50% 40%;
+}
+#wrap #main #section1 .slide-container .slide-content .slide-wrap .slide3
+{
+    background-image:url(../img/Slide3.jpg);
+    background-position: 50% 15%;
+}
+
+
+#wrap #main #section2{width:100%; height:150px;}
+#wrap #main #section2 .container{width:100%; height:100%;}
+#wrap #main #section2 .container ul{width:100%; height:100%; display:flex;}
+#wrap #main #section2 .container ul li{width:16.666%; height:100%; border-right:1px solid #ddd; position:relative;}
+#wrap #main #section2 .container ul li .busu{ width:100%; height:100%; position:absolute; top:0; left:0;}
+#wrap #main #section2 .container ul li .busu h2{width:100%; height:50px; text-align:center; padding-top:10px; font-size:15px;}
+#wrap #main #section2 .container ul li a{width:100%; height:100%; display:flex; align-items: center; justify-content: center;}
+#wrap #main #section2 .container ul li a:hover{background:rgba(0,0,0,0.1)}
+#wrap #main #section2 .container ul li a img{width:25%;}
+
+
+
+#wrap #main #section3{width:100%; height:250px; background:#fff; border-top:1px solid #ddd;}
+
+#wrap #main #section3 .container{width:100%; height:100%; display:flex; margin-top:10px; padding-top:20px;}
+
+#wrap #main #section3 .container .notice-box{width:50%; height:100%; padding-left:50px;}
+#wrap #main #section3 .container .notice-box .notice-title{width:100%; text-align: left; margin-left:20px; margin-bottom:20px;}
+#wrap #main #section3 .container .notice-box .notice-title h3{font-size:16px;}
+#wrap #main #section3 .container .notice-box .notice-content{width:100%; height:100%;}
+#wrap #main #section3 .container .notice-box .notice-content > ul{width:100%; height:100%; padding-left:10px;}
+#wrap #main #section3 .container .notice-box .notice-content > ul >li
+{
+    width:75%; display:flex; justify-content: space-between; align-items: center;
+    padding-top:10px; padding-bottom:10px; border-bottom:1px solid #aaa;
+    padding-left:10px; position: relative;
+
+}
+
+#wrap #main #section3 .container .notice-box .notice-content > ul >li::before
+{
+    content:'';
+    width:4px;
+    height:4px;
+    border-radius:50%;
+    top:50%; left:0;
+    background-color:#333;
+    
+}
+
+#wrap #main #section3 .container .notice-box .notice-content > ul >li span{color:#ccc; font-size:12px;}
+#wrap #main #section3 .container .notice-box .notice-content > ul >li > a
+{
+    width:85%; 
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size:14px;
+    line-height:15px;
+    
+}
+
+#wrap #main #section3 .container .notice-box .notice-content > ul >li > a:hover{
+    text-decoration:underline;
+    color:slateblue; 
+}
+
+#wrap #main #section3 .container .gallery-box{width:50%; height:100%; padding-left:40px;}
+#wrap #main #section3 .container .gallery-box .gallery-title{width:100%; text-align:left; margin-left:20px; margin-bottom:20px;}
+#wrap #main #section3 .container .gallery-box .gallery-title h3{font-size:16px;}
+#wrap #main #section3 .container .gallery-box .gallery-content{width:100%; height:100%;}
+#wrap #main #section3 .container .gallery-box .gallery-content > ul{width:100%; height:100%; display:flex;} 
+#wrap #main #section3 .container .gallery-box .gallery-content > ul >li{width:33.333%;} 
+#wrap #main #section3 .container .gallery-box .gallery-content > ul >li > a{width:100%; transition:all 0.7s; opacity:0.7;} 
+#wrap #main #section3 .container .gallery-box .gallery-content > ul >li > a >img{width:80%; padding-right:10px;} 
+#wrap #main #section3 .container .gallery-box .gallery-content > ul >li > a:hover {opacity:1;}
+
+
+
+
+#wrap #footer{width:100%; height:120px; display:flex; border-top:1px solid #ddd; background:#fff; position:relative; z-index:2;}
+#wrap #footer .left{width:200px; height:100;}
+#wrap #footer .left h1{width:100%;}
+#wrap #footer .left h1 a{width:100%; height:100%; display:flex; justify-content: center; align-items: center;}
+#wrap #footer .left h1 a img{width:70%; opacity:0.3; transition:all 1s;}
+#wrap #footer .left h1 a:hover img{opacity:1.0;}
+
+
+#wrap #footer .center{width:calc(100% - 500px); height:100%; border-left:1px solid #ddd; border-right:1px solid #ddd;}
+#wrap #footer .center .footMenu{width:100%; height:50%;}
+#wrap #footer .center .footMenu ul{width:100%; height:100%; display:flex;  justify-content:center; align-items: center; padding-top:20px; border:1px dotted #ddd;} 
+#wrap #footer .center .footMenu ul li{width:25%; height:100%; border-right:1px}
+#wrap #footer .center .footMenu ul li a{display:flex; align-items: center; justify-content: center; font-size:13px; font-weight:600;}
+#wrap #footer .center .footMenu ul li a:hover{color:slateblue; text-decoration:underline;}
+
+#wrap #footer .center .copyright{width:100%; height:50%;}
+#wrap #footer .center .copyright address{font-size:12px; color:#ccc; line-height:120%; text-align: center; margin-top:10px;}
+#wrap #footer .center .copyright address span{display:block; font-size:12px; text-align:center; color:#ccc; padding-top:10px;}
+
+#wrap #footer .right{width:300px; height:100%;}
+#wrap #footer .right .container{width:100%; height:100%; display:flex; justify-content: center; align-items: center;}
+#wrap #footer .right .container select{padding:5px 15px; background:#fff; color:#333; border-radius:5%; font-weight:600;}
+#wrap #footer .right .container select option{color:#000; font-weight:600;}
+#wrap .popup
+{
+    width:100%; height:100%; position:absolute; top:0; left:0; z-index:4; background:rgba(0,0,0,0.5);
+    display:flex; justify-content: center; align-items: center;
+}
+#wrap .popup .container{width:600px;height:400px; background:#fff; border-radius:2.5%; position:relative;}
+#wrap .popup .container .title{width:100%;text-align: center; padding:15px 0; border-bottom:1px solid #ddd;}
+#wrap .popup .container .title h2{font-size:25px;}
+#wrap .popup .container .content{width:100%;}
+#wrap .popup .container .content ul{width:100%;}
+#wrap .popup .container .content ul li{padding-top:10px; padding-right:20px; padding-left:20px; line-height:150%;}
+
+#wrap .popup .container .close-btn-box{position:absolute; bottom:5%; right:5%;}
+#wrap .popup .container .close-btn-box .close-btn{background:#fff; border:1px solid #ddd; padding:5px 15px; border-radius:10%;}
+#wrap .popup .container .close-btn-box .close-btn:hover{background:#aaa; color:#fff; cursor:pointer;}
+
+#wrap .popup.on{display:flex;}
+#wrap .popup.off{display:none;}
